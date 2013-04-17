@@ -72,7 +72,11 @@
    <sourceDirectory>${basedir}/src</sourceDirectory>
    <resources>
     <resource>
-     <directory>src</directory>
+     <directory>${basedir}/src</directory>
+     <filtering>false</filtering>
+    </resource>
+    <resource>
+     <directory>${basedir}/src/powercrystals/netherores</directory> <!-- textures -->
      <filtering>false</filtering>
     </resource>
    </resources>
