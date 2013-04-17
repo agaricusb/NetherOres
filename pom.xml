@@ -72,8 +72,8 @@
    <sourceDirectory>${basedir}/src</sourceDirectory>
    <resources>
     <resource>
-     <directory>src/main/resources</directory>
-     <filtering>true</filtering>
+     <directory>src</directory>
+     <filtering>false</filtering>
     </resource>
    </resources>
     <plugins>
