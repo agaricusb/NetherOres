@@ -26,6 +26,8 @@
   </repositories>
 
   <properties>
+    <mod.at>https://raw.github.com/powercrystals/PowerCrystalsCore/8e70f3440a57a3ba375e235029d86c61570c6549/pcc_at.cfg</mod.at>
+    <forge.suffix>-pc</forge.suffix>
     <ic2.build>294</ic2.build>
     <ic2.version>1.115.${ic2.build}-lf</ic2.version>
     <pcc.build>82</pcc.build>
