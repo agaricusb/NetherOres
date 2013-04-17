@@ -30,6 +30,7 @@
     <ic2.version>1.115.${ic2.build}-lf</ic2.version>
     <pcc.build>82</pcc.build>
     <pcc.version>1.1.3B1-${pcc.build}</pcc.version>
+    <te.version>2.3.0.b7</te.version>
   </properties>
 
   <profiles>
@@ -51,6 +52,13 @@
           <groupId>powercrystals.mods</groupId>
           <artifactId>powercrystalscore</artifactId>
           <version>${pcc.version}</version>
+          <type>jar</type>
+          <scope>compile</scope>
+        </dependency>
+        <dependency>
+          <groupId>cofh.mods</groupId>
+          <artifactId>thermalexpansion</artifactId>
+          <version>${te.version}</version>
           <type>jar</type>
           <scope>compile</scope>
         </dependency>
@@ -100,6 +108,22 @@
                         <version>${pcc.version}</version>
                         <inJars>
                             <param>http://build.technicpack.net/job/PowerCrystalsCore/${pcc.build}/artifact/build/dist/PowerCrystalsCore-${pcc.version}.jar</param>
+                        </inJars>
+                        <srgIn>${mcp.mappings}</srgIn>
+                    </configuration>
+                </execution>
+                <execution>
+                    <id>install-remapped-te</id>
+                    <phase>initialize</phase>
+                    <goals>
+                        <goal>install-remapped-file</goal>
+                    </goals>
+                    <configuration>
+                        <groupId>cofh.mods</groupId>
+                        <artifactId>thermalexpansion</artifactId>
+                        <version>${te.version}</version>
+                        <inJars>
+                            <param>https://dl.dropboxusercontent.com/u/57416963/Minecraft/Beta/ThermalExpansion-${te.version}.jar</param>
                         </inJars>
                         <srgIn>${mcp.mappings}</srgIn>
                     </configuration>
